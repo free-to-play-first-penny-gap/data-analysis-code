@@ -5,19 +5,19 @@ library(dplyr)
 library(tidyverse)
 
 # set working directory
-setwd("/Users/omz6965/Dropbox/Research/A_Selling Virtual Good Endowments/Data/Clean Data Selling Endowments in Virtual Worlds_2026")
+setwd("BLINDED")
 
 # load datasets
-data_1 <- read.csv("Experiment 1 - Low-Mid-High/experiment1_data_prepped.csv", header=TRUE, sep=",")
+data_1 <- read.csv("Experiment 1/experiment1_data_prepped.csv", header=TRUE, sep=",")
 data_1$X <- NULL
 data_1$X.1 <- NULL
 data_1$unique_id <- as.factor(data_1$unique_id)
 
-data_2 <- read.csv("Experiment 2 - Simple-Skimming/experiment2_data_prepped.csv", header=TRUE, sep=",")
+data_2 <- read.csv("Experiment 2/experiment2_data_prepped.csv", header=TRUE, sep=",")
 data_2$X <- NULL
 data_2$unique_id <- as.factor(data_2$unique_id)
 
-data_3 <- read.csv("Experiment 3 - Personalized-Skimming/experiment3_data_prepped.csv", header=TRUE, sep=",")
+data_3 <- read.csv("Experiment 3/experiment3_data_prepped.csv", header=TRUE, sep=",")
 data_3$X <- NULL
 data_3$unique_id <- as.factor(data_3$unique_id)
 
@@ -96,6 +96,6 @@ collapsed_data_3 <- data_3 %>%
   ungroup()
 
 # export csvs
-write.csv(collapsed_data_1,"Experiment 1 - Low-Mid-High/experiment1_data_aggregated.csv")
-write.csv(collapsed_data_2,"Experiment 2 - Simple-Skimming/experiment2_data_aggregated.csv")
-write.csv(collapsed_data_3,"Experiment 3 - Personalized-Skimming/experiment3_data_aggregated.csv")
+write.csv(collapsed_data_1,"Experiment 1/experiment1_data_aggregated.csv")
+write.csv(collapsed_data_2,"Experiment 2/experiment2_data_aggregated.csv")
+write.csv(collapsed_data_3,"Experiment 3/experiment3_data_aggregated.csv")
