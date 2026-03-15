@@ -1,7 +1,7 @@
 # data-analysis-code
 This repository holds the code and data for the research project "Skimming the Free-to-Play First-Penny Gap: Selling Virtual Good Endowments in Mobile Games."
 
-All information that could identify the researcher(s) or the collaborating company has been blinded or removed. The user-level data cannot be shared due to the GDPR at the request of the collaborating company. Instead, data are shared aggregated as mean and standard deviation across country and device segments such that no user-level information is publicly shared. Should you wish to get access to the user-level data for replication, please reach out to the corresponding author (contact information to be added post blinded review process).
+All information that could identify the researcher(s) or the collaborating company has been blinded or removed. The user-level data cannot be shared publicly at the request of the collaborating company. Instead, data are shared aggregated as mean and standard deviation across country and device segments such that no user-level information is publicly shared. Should you wish to get access to the user-level data for replication, please reach out to the corresponding author (contact information to be added post blinded review process).
 
 Each "Experiment" folder contains the SQL code run against the collaborating company's databases to export datasets for the research, the R code used to massage the data further, and the aggregated data that can be shared publicly.
 
