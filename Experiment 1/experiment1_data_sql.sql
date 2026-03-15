@@ -1,7 +1,5 @@
 SELECT
 ROW_NUMBER() OVER (ORDER BY a.uid) AS unique_id,
-a.join_date,
-a.joints join_ts,
 c.test_bucket,
 b.device_os,
 b.device_make,
