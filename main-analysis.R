@@ -415,21 +415,3 @@ plotpersvsflat_2 <- plotpersvsflat +
   ylab("QTE in one-month revenue in $") +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5, size = 12))
-
-
-#################################################################
-##### discussion: inclusion in premium #####
-#################################################################
-
-# make a factor and set lowest quartile as reference
-data_3$gdp_p_cap_quintiles <- factor(data_3$gdp_p_cap_quintiles)
-data_3$gdp_p_cap_quintiles <- relevel(data_3$gdp_p_cap_quintiles, ref = "1")
-
-# run regression of premiumization on gdp p. cap. quintiles
-e3_conversion_gdp_quin <- lm(d30_conversion ~ test_bucket * data_3$gdp_p_cap_quintiles,
-                         data=data_3)
-summary(e3_conversion_gdp_quin)
-
-e3_rev_den_gdp_quin <- lm(d30_rev_denoised ~ test_bucket * data_3$gdp_p_cap_quintiles,
-                      data=data_3)
-summary(e3_rev_den_gdp_quin)
