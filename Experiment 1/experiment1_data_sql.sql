@@ -135,7 +135,7 @@ FROM
 `app-schema.com_app.user_profile`
 WHERE
 CAST(ujd AS DATE) >= DATE('2018-02-14')
-AND CAST(ujd AS DATE) <= DATE('2018-04-12'
+AND CAST(ujd AS DATE) <= DATE('2018-04-12')
 AND device_os = 'android') ) a
 
 LEFT JOIN
